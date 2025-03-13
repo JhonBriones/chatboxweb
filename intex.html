@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox - Best Messaging Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-comment"></i>
+                </div>
+                <span>Chatbox</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Features</a>
+                <a href="#">About Us</a>
+                <a href="#">Download</a>
+            </div>
+            <button class="try-free-btn">Try For Free</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        Get the best <br> <b> experience </b> when <br>
+                        sending messages.
+                    </h1>
+                    <div class="text-btns">
+                        <p>Platform used to send messages with a myriad
+                            <br>of features, by prioritizing the user experience.
+                        </p>
+                        <div class="download-buttons">
+                        <button class="download-btn apple">
+                            <i class="fab fa-apple"></i>
+                            Download Now
+                        </button>
+                        <button class="download-btn">
+                            <i class="fas fa-arrow-down"></i>
+                            Download Now
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="hero-app">
+                    <!-- Chat Interface Component -->
+                    <div class="chat-container">
+                        <!-- Browser chrome mockup -->
+                        <div class="browser-chrome">
+                            <div class="browser-dots">
+                                <div class="dot red"></div>
+                                <div class="dot yellow"></div>
+                                <div class="dot green"></div>
+                            </div>
+                            <div class="browser-address">
+                                <div class="address-icon"></div>
+                                <span>https://chatbox.com/dashboard/messages</span>
+                            </div>
+                        </div>
+
+                        <!-- Chat content -->
+                        <div class="chat-content">
+                            <!-- Left sidebar -->
+                            <div class="sidebar">
+                                <!-- Logo -->
+                                <div class="chat-logo">
+                                    <div class="chat-logo-icon">
+                                        <i class="fas fa-comment"></i>
+                                    </div>
+                                    <span>Chatbox</span>
+                                </div>
+
+                                <!-- Navigation -->
+                                <nav class="chat-nav">
+                                    <button class="chat-nav-item" data-tab="dashboard">
+                                        <i class="fas fa-th-large"></i>
+                                        <span>Dashboard</span>
+                                    </button>
+                                    <button class="chat-nav-item" data-tab="analytics">
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Analytics</span>
+                                    </button>
+                                    <button class="chat-nav-item" data-tab="files">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span>Files</span>
+                                    </button>
+                                    <button class="chat-nav-item" data-tab="call">
+                                        <i class="fas fa-phone"></i>
+                                        <span>Call</span>
+                                    </button>
+                                    <button class="chat-nav-item active" data-tab="messages">
+                                        <i class="fas fa-comment"></i>
+                                        <span>Messages</span>
+                                    </button>
+                                    <button class="chat-nav-item" data-tab="community">
+                                        <i class="fas fa-users"></i>
+                                        <span>Community</span>
+                                    </button>
+                                    <button class="chat-nav-item" data-tab="settings">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </button>
+                                </nav>
+
+                                <!-- User profile -->
+                                <div class="user-profile">
+                                    <div class="avatar">
+                                        <img src="images/profileMe.jpg" alt="User avatar">
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="username">Fazaaa</div>
+                                        <div class="status">Logout</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Message list -->
+                            <div class="message-list">
+                                <!-- Header -->
+                                <div class="list-header">
+                                    <h2>Messages</h2>
+                                    <div class="header-actions">
+                                        <button><i class="fas fa-edit"></i></button>
+                                        <button><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- Pinned message -->
+                                <div class="pinned-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-thumbtack"></i>
+                                        Pinned Message
+                                    </div>
+                                    <div class="message-item">
+                                        <div class="avatar orange">
+                                            <img src="images/profilelogo2.jpg" alt="Odama Studio">
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Odama Studio</span>
+                                                <span class="message-time">05:11 PM</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span>Mas Happy Typing.....</span>
+                                                <span class="unread-indicator"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-item">
+                                        <div class="avatar green">
+                                            <img src="images/profilelogo1.png" alt="Nolaaa">
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Hatypo Studio</span>
+                                                <span class="message-time">16:01 PM</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span>Momon : Lahh gast</span>
+                                                <span class="read-indicator"><i class="fas fa-check"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="message-item">
+                                        <div class="avatar">
+                                            <img src="images/profileavatar1.jpg" alt="Mas Happy">
+                                            <span class="typing-indicator"></span>
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Nolaaa</span>
+                                                <span class="message-time">03:29 PM</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span>Keren banget</span>
+                                                <span class="unread-indicator"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- All messages -->
+                                <div class="all-messages-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-comment"></i>
+                                        All Message
+                                    </div>
+                                    
+                                    <div class="message-item">
+                                        <div class="avatar blue">
+                                            <img src="images/profile1.jpg" alt="Hatypo Studio">
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Mas Happy</span>
+                                                <span class="message-time">02:21 PM</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span class="typing-text">Typing...</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="message-item">
+                                        <div class="avatar">
+                                            <img src="images/profile2.jpg" alt="Mas Rohmad">
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Mas Rohmad</span>
+                                                <span class="message-time">01:12 PM</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span>Zaa jo lali ngeshot yaa</span>
+                                                <span class="unread-indicator"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="message-item">
+                                        <div class="avatar">
+                                            <img src="images/profile3.jpg" alt="Mas Listian">
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Mas Listian</span>
+                                                <span class="message-time">12:10 AM</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span>Mantapp za</span>
+                                                <span class="badge">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="message-item">
+                                        <div class="avatar">
+                                            <img src="images/profile4.jpg" alt="Rafi Rohmat">
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Rafi Rohmat</span>
+                                                <span class="message-time">Yesterday</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span><i class="fas fa-microphone"></i> Voice message</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="message-item">
+                                        <div class="avatar">
+                                            <img src="images/profileavatar1.jpg" alt="Caca">
+                                            <span class="online-indicator"></span>
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Caca</span>
+                                                <span class="message-time">Yesterday</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span>Oke suwun</span>
+                                                <span class="read-indicator"><i class="fas fa-check"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="message-item">
+                                        <div class="avatar">
+                                            <img src="images/fotoavatar2.jpg" alt="Farhan">
+                                        </div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="sender-name">Farhan</span>
+                                                <span class="message-time">Yesterday</span>
+                                            </div>
+                                            <div class="message-preview">
+                                                <span>Zaa udah tak update di figma</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chat area -->
+                            <div class="chat-area">
+                                <!-- Chat header -->
+                                <div class="chat-header">
+                                    <div class="chat-contact">
+                                        <div class="avatar orange">
+                                            <img src="images/profilelogo2.jpg" alt="Odama Studio">
+                                        </div>
+                                        <div class="contact-info">
+                                            <h3>Odama Studio</h3>
+                                            <p>Mas Happy Typing....</p>
+                                        </div>
+                                    </div>
+                                    <div class="chat-actions">
+                                        <div class="participants">
+                                            <div class="participant-avatar"><img src="images/profile1.jpg" alt="User"></div>
+                                            <div class="participant-avatar"><img src="images/profile2.jpg" alt="User"></div>
+                                            <div class="participant-avatar"><img src="images/profile5.jpg" alt="User"></div>
+                                            <div class="participant-count">14</div>
+                                        </div>
+                                        <button><i class="fas fa-video"></i></button>
+                                        <button><i class="fas fa-phone"></i></button>
+                                        <button><i class="fas fa-ellipsis-h"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- Chat messages -->
+                                <div class="chat-messages">
+                                    <div class="date-divider">Today, Jan 30</div>
+                                    
+                                    <!-- Received message -->
+                                    <div class="message received">
+                                        <div class="avatar">
+                                            <img src="images/profile1.jpg" alt="Mas Happy">
+                                        </div>
+                                        <div class="message-bubble-container">
+                                            <div class="message-info">
+                                                <span class="sender-name">Mas Happy</span>
+                                                <span class="message-time">05:00 PM</span>
+                                            </div>
+                                            <div class="message-bubble">
+                                                <p>Guysss tahun depan liburan ke Jepun! 🇯🇵 🇯🇵 🇯🇵</p>
+                                            </div>
+                                            <div class="message-bubble">
+                                                <p>Minta tolong nanti dibuat pembagian tugas kaya biasa</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Sent message -->
+                                    <div class="message sent">
+                                        <div class="message-bubble-container">
+                                            <div class="message-info">
+                                                <span class="message-time">05:02 PM</span>
+                                                <span class="sender-name">You</span>
+                                            </div>
+                                            <div class="message-bubble">
+                                                <p>Gokill!</p>
+                                            </div>
+                                        </div>
+                                        <div class="avatar">
+                                            <img src="images/profileMe.jpg" alt="You">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Received message -->
+                                    <div class="message received">
+                                        <div class="avatar">
+                                            <img src="images/profile2.jpg" alt="Mas Rohmad">
+                                        </div>
+                                        <div class="message-bubble-container">
+                                            <div class="message-info">
+                                                <span class="sender-name">Mas Rohmad</span>
+                                                <span class="message-time">05:01 PM</span>
+                                            </div>
+                                            <div class="message-bubble">
+                                                <p>Tenan ki???</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Received message with mentions -->
+                                    <div class="message received">
+                                        <div class="avatar">
+                                            <img src="images/profile1.jpg" alt="Mas Happy">
+                                        </div>
+                                        <div class="message-bubble-container">
+                                            <div class="message-info">
+                                                <span class="sender-name">Mas Happy</span>
+                                                <span class="message-time">05:11 PM</span>
+                                            </div>
+                                            <div class="message-bubble">
+                                                <p>
+                                                    <span class="mention">@Mas Listian</span> 
+                                                    <span class="mention">@Fazaa</span> 
+                                                    <span class="mention">@Mba Nayu</span>
+                                                </p>
+                                            </div>
+                                            <div class="message-bubble">
+                                                <p>Minto! Cek Figma ini dong</p>
+                                                <a href="#" class="link">https://www.figma.com/file/adcopy...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Sent message -->
+                                    <div class="message sent">
+                                        <div class="message-bubble-container">
+                                            <div class="message-info">
+                                                <span class="message-time">05:12 PM</span>
+                                                <span class="sender-name">You</span>
+                                            </div>
+                                            <div class="message-bubble">
+                                                <p>Wokee siap mas! nuwi cek 🔥🔥🔥</p>
+                                            </div>
+                                        </div>
+                                        <div class="avatar">
+                                            <img src="images/profileMe.jpg" alt="You">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Message input -->
+                                <div class="message-input">
+                                    <button class="input-action">
+                                        <i class="fas fa-microphone"></i>
+                                    </button>
+                                    <div class="input-field">
+                                        <input type="text" placeholder="Type a message">
+                                        <div class="input-actions">
+                                            <button><i class="fas fa-smile"></i></button>
+                                            <button><i class="fas fa-paperclip"></i></button>
+                                        </div>
+                                    </div>
+                                    <button class="input-action">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="partner-logos">
+            <img src="" alt="Stripe">
+            <img src="" alt="Afterpay">
+            <img src="" alt="Hopin">
+            <img src="" alt="Splunk">
+            <img src="" alt="Attentive">
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <button class="button-feature">Featured</button>
+                <h2>Reasons why you should choose a <span class="highlight">Chatbox</span>.</h2>
+                <p>Chatbox has several features that make life easier<br>why you choose chatbox</p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card-blue">
+                    <div class="feature-icon blue">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Easy to use</h3>
+                    <p>Easy to use for anyone,<br> and simple</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Real Time</h3>
+                    <p>Connect with customers <br> in real time</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Safety & Private</h3>
+                    <p>Enjoy your comfort and safety <br> when Communicate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communicate Section -->
+    <section class="communicate">
+        <div class="container">
+            <div class="communicate-content">
+                <div class="communicate-text">
+                    <h2>Communicate more efficiently by using <span class="highlight">Chatbox</span></h2>
+                    <p>Send messages easily using chat, mobile or desktop applications, and with a variety of features that can make your communication easier.</p>
+                    <div class="stats">
+                        <div class="container">
+                            <div class="stats-content">
+                                <div class="stat-item">
+                                    <h3>1M+</h3>
+                                    <p>Users</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>2M+</h3>
+                                    <p>Download</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>2+</h3>
+                                    <p>Years</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="communicate-app">
+                    <!-- Mini Chat Interface -->
+                    <div class="chat-container-mini">
+                        <!-- Simplified chat interface -->
+                        <img src="images/chat-mini-message.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Time Section -->
+    <section class="real-time">
+        <div class="container">
+            <div class="rt-content">
+                <div class="rt-app">
+                    <!-- Mini Chat Interface for Real Time -->
+                    <div class="chat-container-mini2">
+                        <img src="images/Captura de pantalla 2025-03-07 164243.png" alt="">
+                    </div>
+                </div>
+                <div class="rt-text">
+                    <h2>Send messages in <span class="highlight">Real Time</span>, without any delay between us</h2>
+                    <p>Send messages easily and chat without any delay between us, keep the convenience of sending messages better and more fun</p>
+                    <button class="learn-more-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chatminibase">
+        <div class="chatminibase-img">
+            <img src="images/chat-mini-message3.png" alt="">
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Want to stay Connected?</h2>
+                    <div class="cta-buttons">
+                        <button class="download-btn1">
+                            <i class="fab fa-apple"></i>
+                            Download Now
+                        </button>
+                        <button class="download-btn2">
+                            <i class="fas fa-arrow-down"></i>
+                            Download Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <span>Chatbox</span>
+                    </div>
+                    <p>Platform used to send messages with a variety of features, by prioritizing the user experience.</p>
+                    <p class="email">hello@chatbox.com</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Home</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Features</a>
+                        <a href="#">Download</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Features</h4>
+                        <a href="#">Real Time</a>
+                        <a href="#">Safety & Private</a>
+                        <a href="#">Easy to Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Social Media</h4>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>All right reserved by Chatbox</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
