@@ -4,7 +4,7 @@
 
  **Si prefieres ver la aplicación directamente en línea, puedes hacerlo a través del siguiente enlace:**
 
-https://jhonbriones.github.io/chatboxweb
+https://jhonbriones.github.com/chatboxweb
 
 ## ✨ Descripción
 
