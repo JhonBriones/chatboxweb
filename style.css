@@ -1369,6 +1369,9 @@ body {
 }
 
 /* Responsive Design */
+/* Actualizar las media queries existentes y añadir nuevas para mejor soporte responsive */
+
+/* Modificar la sección de media queries existente para mejorar la responsividad */
 @media (max-width: 1200px) {
   .hero-content,
   .communicate-content,
@@ -1377,8 +1380,12 @@ body {
   }
 
   .chat-container {
-    height: 500px;
+    height: 600px;
     width: 80%;
+  }
+
+  .hero-text h1 {
+    font-size: 4.5rem;
   }
 }
 
@@ -1400,10 +1407,12 @@ body {
   .download-buttons,
   .cta-buttons {
     justify-content: center;
+    align-items: center;
   }
 
   .feature-cards {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   .footer-content {
@@ -1423,6 +1432,7 @@ body {
 
   .chat-container {
     width: 90%;
+    height: 550px;
   }
 
   .communicate-content,
@@ -1436,6 +1446,23 @@ body {
     width: 100%;
     margin-right: 0;
     margin-bottom: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3.8rem;
+  }
+
+  .chat-content {
+    height: 100%;
+  }
+
+  .chat-area {
+    display: none;
+  }
+
+  .sidebar,
+  .message-list {
+    width: 50%;
   }
 }
 
@@ -1460,17 +1487,21 @@ body {
 
   .chat-content {
     flex-direction: column;
+    height: 100%;
+    overflow: hidden;
   }
 
   .sidebar,
   .message-list {
     width: 100%;
     height: auto;
+    max-height: 250px;
+    overflow-y: auto;
   }
 
   .chat-container {
     height: auto;
-    max-height: 600px;
+    max-height: 500px;
     width: 95%;
   }
 
@@ -1494,6 +1525,30 @@ body {
     margin-right: 0;
     margin-bottom: 2rem;
   }
+
+  .features {
+    padding: 20rem 0 4rem 0;
+  }
+
+  .section-header {
+    margin: 4rem auto 2rem;
+  }
+
+  .chat-container-mini img,
+  .chat-container-mini2 img,
+  .chatminibase-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .partner-logos {
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .partner-logos img {
+    max-width: 80px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1514,6 +1569,7 @@ body {
   .download-btn1,
   .download-btn2 {
     padding: 1rem 2rem;
+    font-size: 0.9rem;
   }
 
   .feature-card,
@@ -1534,8 +1590,158 @@ body {
   }
 
   .browser-address {
-    margin-left: 20%;
+    margin-left: 10%;
     max-width: 200px;
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 8rem 0 15rem;
+  }
+
+  .features {
+    padding: 15rem 0 4rem 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-header p {
+    font-size: 0.9rem;
+  }
+
+  .communicate-text h2,
+  .rt-text h2,
+  .cta-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .language-selector {
+    margin-left: 0.5rem;
+  }
+
+  .logo span {
+    font-size: 0.9rem;
+  }
+
+  .chat-nav-item {
+    width: 180px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .message-item {
+    padding: 6px 12px;
+  }
+
+  .sender-name {
+    font-size: 13px;
+  }
+
+  .message-time {
+    font-size: 11px;
+  }
+
+  .message-preview span {
+    font-size: 11px;
+  }
+}
+
+/* Añadir media query para dispositivos muy pequeños */
+@media (max-width: 400px) {
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .chat-container {
+    max-height: 450px;
+  }
+
+  .browser-address {
+    margin-left: 5%;
+    max-width: 150px;
+  }
+
+  .browser-dots {
+    gap: 4px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .sidebar,
+  .message-list {
+    max-height: 200px;
+  }
+
+  .chat-logo span {
+    font-size: 14px;
+  }
+
+  .chat-logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .chat-nav-item {
+    width: 160px;
+    padding: 8px 10px;
+    margin-left: 10px;
+  }
+
+  .list-header h2 {
+    font-size: 16px;
+  }
+
+  .section-header {
+    margin: 2rem auto 1.5rem;
+  }
+
+  .button-feature {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+
+  .footer-content {
+    gap: 2rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+  }
+
+  .link-group h4 {
+    font-size: 1rem;
+  }
+
+  .link-group a {
+    font-size: 0.9rem;
   }
 }
 
